@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gujarat Taxi Service | Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- PREMIUM TAXI LOADER -->
+<div id="loader">
+
+  <!-- Cinematic Background -->
+  <div class="loader-bg"></div>
+
+  <!-- Light Lines -->
+  <div class="light-line line1"></div>
+  <div class="light-line line2"></div>
+
+  <!-- Taxi -->
+  <img src="images/about_taxi.jpeg" class="loader-car">
+
+  <!-- Loading Text -->
+  <div class="loading-text">GUJARAT TAXI</div>
+
+</div>
+
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="logo">
+  <img src="images/gt_logo.png" alt="Gujarat Taxi Logo">
+  <span>Gujarat Taxi</span>
+</div>
+  <div class="menu-toggle">☰</div>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="routes.html">Routes</a></li>
+    <li><a href="book.html">Book Now</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+<!-- HERO SECTION -->
+<!-- HERO SLIDER SECTION -->
+<section class="hero-slider">
+
+
+
+  <div class="slide active">
+  <div class="content">
+    <h1 class="title">Ride Across India</h1>
+    <p class="subtitle">• Fast • Safe • Affordable Travel</p>
+
+    <div class="buttons">
+      <a href="tel:+918141132950" class="btn call">
+  <span>CALL NOW →</span>
+</a>
+
+<a href="https://wa.me/918141132950?text=Hello%20Gujarat%20Taxi!%20I%20want%20to%20book%20a%20ride." class="btn whatsapp">
+  <span>WHATSAPP →</span>
+</a>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="slide">
+  <div class="content">
+    <h1 class="title">Your Taxi, Anytime</h1>
+    <p class="subtitle">Book rides instantly Anywhere Anytime</p>
+
+    <div class="buttons">
+      <a href="tel:+918141132950" class="btn call">
+  <span>CALL NOW →</span>
+</a>
+
+<a href="https://wa.me/918141132950?text=Hello%20Gujarat%20Taxi!%20I%20want%20to%20book%20a%20ride." class="btn whatsapp">
+  <span>WHATSAPP →</span>
+</a>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="slide">
+  <div class="content">
+    <h1 class="title">Trusted by Thousands</h1>
+    <p class="subtitle">Comfortable Journeys every day</p>
+
+    <div class="buttons">
+      <a href="tel:+918141132950" class="btn call">
+  <span>CALL NOW →</span>
+</a>
+
+<a href="https://wa.me/918141132950?text=Hello%20Gujarat%20Taxi!%20I%20want%20to%20book%20a%20ride." class="btn whatsapp">
+  <span>WHATSAPP →</span>
+</a>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="slide">
+  <div class="content">
+    <h1 class="title">Travel Made Easy</h1>
+    <p class="subtitle">Comfortable experience at low cost</p>
+
+    <div class="buttons">
+      <a href="tel:+918141132950" class="btn call">
+  <span>CALL NOW →</span>
+</a>
+
+<a href="https://wa.me/918141132950?text=Hello%20Gujarat%20Taxi!%20I%20want%20to%20book%20a%20ride." class="btn whatsapp">
+  <span>WHATSAPP →</span>
+</a>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+
+
+<!-- SEARCH -->
+<section class="search-section">
+  <h2>Find Your Ride</h2>
+  <div class="search-box">
+    <input type="text" id="pickup" placeholder="Pickup City">
+    <input type="text" id="drop" placeholder="Drop City">
+    <button onclick="searchRoute()">Search Now</button>
+  </div>
+</section>
+<script>
+
+window.addEventListener("DOMContentLoaded", () => {
+
+  const searchedRoute = localStorage.getItem("searchedRoute");
+
+  if (searchedRoute) {
+
+    setTimeout(() => {
+
+      alert(
+        searchedRoute +
+        "\n\n✅ All India Taxi Service Available\n\nBook Your Ride Now!"
+      );
+
+      localStorage.removeItem("searchedRoute");
+
+    }, 500);
+  }
+
+});
+
+</script>
+
+<!-- INFO STRIP (NEW) -->
+<section class="info-strip">
+
+  <div class="info-box box1">
+    <h3><span class="counter" data-target="10000">0</span>+</h3>
+    <p>Happy Customers</p>
+  </div>
+
+  <div class="info-box box2">
+    <h3><span class="counter" data-target="500">0</span>+</h3>
+    <p>Daily Rides</p>
+  </div>
+
+  <div class="info-box box3">
+    <h3><span class="counter" data-target="50">0</span>+</h3>
+    <p>Cities Covered</p>
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <h2>Why Choose Us</h2>
+
+  <div class="grid">
+
+  <div class="card card1">
+    <h3>🚖 24/7 Service</h3>
+    <p>Always available whenever you need.</p>
+  </div>
+
+  <div class="card card2">
+    <h3>💰 Best Price</h3>
+    <p>Affordable fixed rates.</p>
+  </div>
+
+  <div class="card card3">
+    <h3>🛡️ Safe Travel</h3>
+    <p>Verified drivers and safe rides.</p>
+  </div>
+
+  <div class="card card4">
+    <h3>⭐ Trusted Drivers</h3>
+    <p>Professional and experienced.</p>
+  </div>
+
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- TRAVEL DESTINATIONS SECTION -->
+
+<section class="travel-blog">
+
+  <h2>Popular Destinations We Cover</h2>
+
+  <p class="blog-subtitle">
+    Comfortable taxi rides across famous tourist destinations in India.
+  </p>
+
+  <div class="blog-grid">
+
+    <!-- SOMNATH 1 -->
+    <div class="blog-card">
+      <img src="images/Somnath_temple_tour_image.jpeg" alt="Somnath Temple">
+      <div class="blog-content">
+        <h3>Somnath Temple Tour</h3>
+        <p>Comfortable taxi rides for Somnath temple visits and family trips.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- SOMNATH 2 -->
+    <div class="blog-card">
+      <img src="images/Somnath_darshan_ride.jpeg" alt="Somnath Temple">
+      <div class="blog-content">
+        <h3>Somnath Darshan Ride</h3>
+        <p>Enjoy safe and peaceful travel to Somnath Jyotirlinga.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- SOMNATH 3 -->
+    <div class="blog-card">
+      <img src="images/family_trip_somnath.jpeg" alt="Somnath Temple">
+      <div class="blog-content">
+        <h3>Family Trip to Somnath</h3>
+        <p>Premium taxi service for family and group temple journeys.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- SOMNATH 4 -->
+    <div class="blog-card">
+      <img src="images/Somnath_weekend_journey.jpeg" alt="Somnath Temple">
+      <div class="blog-content">
+        <h3>Somnath Weekend Journey</h3>
+        <p>Affordable and reliable outstation rides for Somnath travel.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+
+
+    <!-- DWARKA 1 -->
+    <div class="blog-card">
+      <img src="images/dwarka_1.jpeg" alt="Dwarkadhish Temple">
+      <div class="blog-content">
+        <h3>Dwarkadhish Temple Tour</h3>
+        <p>Comfortable cab service for Dwarka spiritual journeys.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- DWARKA 2 -->
+    <div class="blog-card">
+      <img src="images/dwarka_2.jpeg" alt="Dwarkadhish Temple">
+      <div class="blog-content">
+        <h3>Dwarka Family Travel</h3>
+        <p>Safe and smooth rides for temple and holiday trips.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- DWARKA 3 -->
+    <div class="blog-card">
+      <img src="images/dwarka_3.jpeg" alt="Dwarkadhish Temple">
+      <div class="blog-content">
+        <h3>Premium Dwarka Taxi</h3>
+        <p>Luxury vehicles available for long-distance temple tours.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- DWARKA 4 -->
+    <div class="blog-card">
+      <img src="images/dwarka_4.jpeg" alt="Dwarkadhish Temple">
+      <div class="blog-content">
+        <h3>Dwarka Road Journey</h3>
+        <p>Professional drivers and comfortable travel experience.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+
+
+    <!-- GIR 1 -->
+    <div class="blog-card">
+      <img src="images/Gir_1.jpeg" alt="Gir National Park">
+      <div class="blog-content">
+        <h3>Gir National Park Trip</h3>
+        <p>Enjoy wildlife tours with comfortable taxi transportation.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- GIR 2 -->
+    <div class="blog-card">
+      <img src="images/Gir_2.jpeg" alt="Gir National Park">
+      <div class="blog-content">
+        <h3>Sasan Gir Safari Ride</h3>
+        <p>Reliable taxi rides for Gir jungle safari experiences.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- GIR 3 -->
+    <div class="blog-card">
+      <img src="images/Gir_3.jpeg" alt="Gir National Park">
+      <div class="blog-content">
+        <h3>Wildlife Travel Service</h3>
+        <p>Travel safely with family and friends to Gir forest.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- GIR 4 -->
+    <div class="blog-card">
+      <img src="images/Gir_4.jpeg" alt="Gir National Park">
+      <div class="blog-content">
+        <h3>Nature Tour Journey</h3>
+        <p>Comfortable long-route taxi rides for wildlife lovers.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+
+
+    <!-- DAMAN DIU 1 -->
+    <div class="blog-card">
+      <img src="images/daman_beach_trip_image.jpeg" alt="Daman and Diu">
+      <div class="blog-content">
+        <h3>Daman Beach Trip</h3>
+        <p>Relaxing coastal journeys with premium taxi comfort.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- DAMAN DIU 2 -->
+    <div class="blog-card">
+      <img src="images/diu_holiday_travelling.jpeg" alt="Daman and Diu">
+      <div class="blog-content">
+        <h3>Diu Holiday Ride</h3>
+        <p>Affordable cab service for beach vacations and tours.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- DAMAN DIU 3 -->
+    <div class="blog-card">
+      <img src="images/daman_road_journey.jpeg" alt="Daman and Diu">
+      <div class="blog-content">
+        <h3>Coastal Road Journey</h3>
+        <p>Enjoy scenic rides with experienced drivers and clean vehicles.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- DAMAN DIU 4 -->
+    <div class="blog-card">
+      <img src="images/daman_family_tour.jpeg" alt="Daman and Diu">
+      <div class="blog-content">
+        <h3>Daman Family Tour</h3>
+        <p>Comfortable group rides for beach and sightseeing travel.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+
+
+    <!-- STATUE OF UNITY 1 -->
+    <div class="blog-card">
+      <img src="images/S_1.jpeg" alt="Statue of Unity">
+      <div class="blog-content">
+        <h3>Statue of Unity Tour</h3>
+        <p>Premium taxi rides to India's iconic Statue of Unity.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- STATUE OF UNITY 2 -->
+    <div class="blog-card">
+      <img src="images/S_2.jpeg" alt="Statue of Unity">
+      <div class="blog-content">
+        <h3>Kevadia Travel Service</h3>
+        <p>Safe and affordable transportation for family visits.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- STATUE OF UNITY 3 -->
+    <div class="blog-card">
+      <img src="images/S_3.jpeg" alt="Statue of Unity">
+      <div class="blog-content">
+        <h3>Weekend Unity Trip</h3>
+        <p>Comfortable outstation taxi rides with professional drivers.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+    <!-- STATUE OF UNITY 4 -->
+    <div class="blog-card">
+      <img src="images/S_4.jpeg" alt="Statue of Unity">
+      <div class="blog-content">
+        <h3>Luxury Gujarat Tour</h3>
+        <p>Travel across Gujarat with premium cab services.</p>
+        <a href="book.html">Book Ride →</a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
